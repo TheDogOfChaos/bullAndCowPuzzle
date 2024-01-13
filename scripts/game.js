@@ -27,4 +27,9 @@ $(document).ready(function(){
 		});
 		console.log('Checked Checkbox Values:', switchVals);
 	});
+	
+	//TODO: Make randomising array to check against
+	//TODO: Limited chances to check?
+	//TODO: Resident Evil 2 reserve power puzzle-esque?
+	
 }); 
