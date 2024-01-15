@@ -9,35 +9,30 @@ $(document).ready(function(){
 	}
 
 	let difficulty = getUrlParamVal('diff');
-	let switchVals = [];
-	let targetVal = Math.floor(Math.random() * (2 ** difficulty)) + 1;
+	let guess = [];
+	let secret = []
 	
 	for (let i = 0; i < difficulty; i++) {
-		if (((i % 8) == 0) & !(i == 0)) {
-			$('.switchbox').append('<br>');
+		do {
+			let rand = Math.floor(Math.random() * 10);
 		}
-		$('.switchbox').append(function(n){
-			let switchCreate = $('<input type="button" class="switch">');
-			switchCreate.attr('id', i + 1);
-			switchCreate.attr('value', i + 1);
-			return switchCreate;
-		});
-		console.log(((i % 8) == 0).toString(2) + i)
-
+		while (secret.includes(rand))
+		secret.push(rand)
+		console.log(secret)
 	}
-	
-	
+	$('.numButton').click(function() {
+		console.log(this.id)
+		$('#answer').append(this.id)
+		guess.push(this.id)
+	});
 	
 	$('#checkAnswer').click(function() {
-		let checkboxes = $('.switchbox').find('.switch');
-		$('.switch').each(function(index, element) {
-			if ($(element).prop('checked')) {
-				let switchID = element.id;
-				let value = $(element).val();
-				switchVals.push({ id: switchID, value: value });
-			}
-		});
-		console.log('Checked Checkbox Values:', switchVals);
+		console.log(guess)
+	});
+	
+	$('#reset').click(function() {
+		guess = [];
+		$('#answer').text('');
 	});
 	
 	//NOPE: Make randomising array to check against
