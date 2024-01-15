@@ -11,23 +11,33 @@ $(document).ready(function(){
 	let difficulty = getUrlParamVal('diff');
 	let guess = [];
 	let secret = []
+	let rand;
 	
 	for (let i = 0; i < difficulty; i++) {
 		do {
-			let rand = Math.floor(Math.random() * 10);
+			rand = Math.floor(Math.random() * 10);
 		}
-		while (secret.includes(rand))
-		secret.push(rand)
-		console.log(secret)
+		while (secret.includes(rand));
+		secret.push(rand);
 	}
 	$('.numButton').click(function() {
-		console.log(this.id)
-		$('#answer').append(this.id)
-		guess.push(this.id)
+		if (guess.length != difficulty){
+			$('#answer').append(this.id)
+			guess.push(this.id)
+		}
 	});
 	
 	$('#checkAnswer').click(function() {
-		console.log(guess)
+		console.log(secret)
+		for (let i=0; i < difficulty; i++) {
+			if (guess[i] == secret[i]) {
+				console.log("bull")
+			} else if (secret.includes(guess[i])) {
+				console.log("cow")
+			} else {
+				console.log("no u")
+			}
+		}
 	});
 	
 	$('#reset').click(function() {
