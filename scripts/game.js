@@ -41,8 +41,8 @@ $(document).ready(function(){
 				cow++
 			}
 		}
-		$("#bulls").text(bull);
-		$("#cows").text(cow);
+		$("#bull").text(bull);
+		$("#cow").text(cow);
 		if (bull == difficulty) {
 			console.log("You win!")
 		}
