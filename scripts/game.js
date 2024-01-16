@@ -15,6 +15,10 @@ $(document).ready(function(){
 	let cow = 0;
 	let rand;
 	
+	if (difficulty > 8) {
+		console.log("CODE TOO LONG")
+		difficulty = 8;
+	}
 	for (let i = 0; i < difficulty; i++) {
 		do {
 			rand = Math.floor(Math.random() * 10);
@@ -26,6 +30,7 @@ $(document).ready(function(){
 		if (guess.length != difficulty){
 			$('#answer').append(this.id)
 			guess.push(parseInt(this.id, 10))
+			$(this).prop("disabled", true);
 		}
 	});
 	
@@ -51,10 +56,7 @@ $(document).ready(function(){
 	$('#reset').click(function() {
 		guess = [];
 		$('#answer').text('');
+		$('.numButton').prop("disabled", false);
 	});
-	
-	//NOPE: Make randomising array to check against
-	//TODO: Assign each checkbox a binary value
 	//IDEA: Limited chances to check?
-	
 }); 
