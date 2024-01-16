@@ -1,4 +1,4 @@
-            - name: Deploy GitHub Pages site
+  name: Deploy GitHub Pages site
   uses: actions/deploy-pages@v4.0.3
   with:
     # GitHub token
@@ -13,4 +13,3 @@
     artifact_name: # optional, default is github-pages
     # Is this attempting to deploy a pull request as a GitHub Pages preview site? (NOTE: This feature is only in alpha currently and is not available to the public!)
     preview: # optional, default is false
-          
