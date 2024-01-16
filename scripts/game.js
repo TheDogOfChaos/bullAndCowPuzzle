@@ -35,14 +35,11 @@ $(document).ready(function(){
 	});
 	
 	$('#checkAnswer').click(function() {
-		console.log(secret)
 		bull = 0; cow = 0;
 		for (let i=0; i < difficulty; i++) {
 			if (guess[i] == secret[i]) {
-				console.log("bull")
 				bull++
 			} else if (secret.includes(guess[i]) && guess[i] != secret[i]) {
-				console.log("cow")
 				cow++
 			}
 		}
