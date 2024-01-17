@@ -52,6 +52,7 @@ $(document).ready(function(){
 	
 	$('#reset').click(function() {
 		guess = [];
+		bull = 0; cow = 0;
 		$('#answer').text('');
 		$('.numButton').prop("disabled", false);
 	});
