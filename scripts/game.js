@@ -14,10 +14,14 @@ $(document).ready(function(){
 	let bull = 0;
 	let cow = 0;
 	let rand;
+	console.log(difficulty)
 	
 	if (difficulty > 8) {
 		console.log("CODE TOO LONG")
 		difficulty = 8;
+	} else if (!difficulty) {
+		console.log("no difficulty selected")
+		$('#answer').text("No difficulty selected!")
 	}
 	for (let i = 0; i < difficulty; i++) {
 		do {
