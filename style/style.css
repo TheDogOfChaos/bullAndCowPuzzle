@@ -1,0 +1,51 @@
+.codebox {
+	margin: 10%;
+	background-color: black;
+	color: grey;
+	border: 2px solid grey;
+	border-radius: 5px;
+}
+
+.infoArea {
+	margin: 2.5% 0 1%;
+	text-align: center;
+}
+
+#answer {
+	border: 1px solid grey;
+	width: 5%;
+}
+
+input[type="button"] {
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+}
+
+.numButton {
+	background-color: #04AA6D; /* Green background */
+	border: 1px solid green; /* Green border */
+	color: white; /* White text */
+	width:10%;
+}
+
+.numButton input:not(:last-child) {
+	border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.numButton:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Add a background color on hover */
+input[type="button"]:hover {
+	background-color: #3e8e41;
+}
+
+:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}

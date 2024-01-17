@@ -11,22 +11,26 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	</head>
 	<body>
-		<div class="switchbox">
-			<input type="button" class="numButton" value="1" id="1">
-			<input type="button" class="numButton" value="2" id="2">
-			<input type="button" class="numButton" value="3" id="3">
-			<input type="button" class="numButton" value="4" id="4">
-			<input type="button" class="numButton" value="5" id="5">
-			<input type="button" class="numButton" value="6" id="6">
-			<input type="button" class="numButton" value="7" id="7">
-			<input type="button" class="numButton" value="8" id="8">
-			<input type="button" class="numButton" value="9" id="9">
-			<input type="button" class="numButton" value="0" id="0">
+		<div class="codebox">
+			<div class="numButtons">
+				<input type="button" class="numButton" value="1" id="1">
+				<input type="button" class="numButton" value="2" id="2">
+				<input type="button" class="numButton" value="3" id="3">
+				<input type="button" class="numButton" value="4" id="4">
+				<input type="button" class="numButton" value="5" id="5">
+				<input type="button" class="numButton" value="6" id="6">
+				<input type="button" class="numButton" value="7" id="7">
+				<input type="button" class="numButton" value="8" id="8">
+				<input type="button" class="numButton" value="9" id="9">
+				<input type="button" class="numButton" value="0" id="0">
+			</div>
+			<div class="infoArea">
+				<span id="answer"></span><br>
+				<i class="bi bi-hourglass-split"></i> <span id="bull">-</span> <i class="bi bi-briefcase-fill"></i> <span id="cow">-</span><br>
+				<input type="submit" id="checkAnswer" value="Check">
+				<input type="submit" id="reset" value="Reset">
+			</div>
 		</div>
-		<span id="answer"></span><br>
-		<i class="bi bi-hourglass-split"></i> <span id="bull">-</span> <i class="bi bi-briefcase-fill"></i> <span id="cow">-</span><br>
-		<input type="submit" id="checkAnswer" value="Check">
-		<input type="submit" id="reset" value="Reset">
 		<div class="history"></div>
 	</body>
 </html>
