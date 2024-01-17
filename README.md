@@ -1,6 +1,6 @@
 # bulls & cows
 
-Play it here: https://thedogofchaos.github.io/bullAndCowPuzzle/?diff=4 (Difficulty level 4
+Play it here: https://thedogofchaos.github.io/bullAndCowPuzzle/?diff=4 (Difficulty level 4)
 
 Your aim is to crack the code that the computer has generated.
 
