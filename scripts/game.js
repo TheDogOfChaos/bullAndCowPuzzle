@@ -46,7 +46,7 @@ $(document).ready(function(){
 		difficulty = 8;
 	} else if (!difficulty) {
 		console.log("no difficulty selected")
-		$('#answer').text("No difficulty selected!")
+		$('#answer').html("No difficulty selected! Click <a href=\"?diff=4\">here</a> to set the difficulty to 4 (4 digits)")
 	}
 	for (let i = 0; i < difficulty; i++) {
 		do {
