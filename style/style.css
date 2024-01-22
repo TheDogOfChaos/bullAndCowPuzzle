@@ -1,6 +1,7 @@
 body {
-	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='100px'><text transform='translate(20, 100) rotate(-45)' fill='rgba(0,255,0,0.1)' font-size='10'>TheDogOfChaos</text></svg>");
 	font-family: 'Audiowide', sans-serif;
+	background-color: black;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='200px' width='200px'><text transform='translate(5, 70) rotate(-45)' fill='rgba(0,255,0,0.1)' font-size='10'>TheDogOfChaos</text><text transform='translate(100, 100) rotate(45)' fill='rgba(0,255,0,0.1)' font-size='10'>TheDogOfChaos</text></svg>");
 }
 
 .codebox {
