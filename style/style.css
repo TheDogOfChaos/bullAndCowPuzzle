@@ -28,6 +28,7 @@ body {
 	background-color: #04AA6D;
 	border: 1px solid green;
 	width: 10%;
+	color: white;
 }
 
 .numButton input:not(:last-child) {
