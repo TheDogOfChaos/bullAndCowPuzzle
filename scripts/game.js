@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	let difficulty = getUrlParamVal('diff');
 	let guess = [];
-	let secret = []
+	let secret = [];
 	let bull = 0;
 	let cow = 0;
 	let rand;
